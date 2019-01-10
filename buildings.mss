@@ -2,8 +2,8 @@
 @building-line: darken(@building-fill, 15%);
 @building-low-zoom: darken(@building-fill, 4%);
 
-@building-major-fill: darken(@building-fill, 20%);
-@building-major-line: darken(@building-major-fill, 25%);
+@building-major-fill: @building-fill;
+@building-major-line: @building-major-fill;
 
 @entrance-permissive: darken(@building-line, 15%);
 @entrance-normal: @building-line;
@@ -36,6 +36,7 @@
   }
 }
 
+/*
 #entrances {
   [zoom >= 18]["entrance" != null]  {
     marker-fill: @entrance-normal;
@@ -77,3 +78,4 @@
     marker-height: 8.0;
   }
 }
+*/

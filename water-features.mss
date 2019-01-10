@@ -5,6 +5,7 @@
 @lock-gate: #aaa;
 @lock-gate-line: #aaa;
 
+/*
 #water-barriers-point, #water-barriers-line, #water-barriers-poly {
   [waterway = 'dam'] {
     #water-barriers-poly[zoom >= 13] {
@@ -63,7 +64,9 @@
     }
   }
 }
+*/
 
+/*
 #piers-poly, #piers-line {
   [man_made = 'pier'][zoom >= 12] {
     #piers-poly {
@@ -92,7 +95,9 @@
     }
   }
 }
+*/
 
+/*
 #marinas-area {
   [zoom >= 14] {
     a/line-width: 1;
@@ -115,7 +120,9 @@
     }
   }
 }
+*/
 
+/*
 .text,
 #text-line {
   [feature = 'waterway_dam'],
@@ -165,7 +172,9 @@
     }
   }
 }
+*/
 
+/*
 #springs {
   [natural = 'spring'][zoom >= 14] {
     marker-file: url('symbols/spring.svg');
@@ -173,3 +182,4 @@
     marker-clip: false;
   }
 }
+*/

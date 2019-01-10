@@ -1,5 +1,5 @@
 @marina-text: #576ddf; // also swimming_pool
-@wetland-text: darken(#4aa5fa, 25%); /* Also for marsh and mud */
+@wetland-text: darken(#4aa5fa, 25%); // Also for marsh and mud
 @shop-icon: #ac39ac;
 @shop-text: #939;
 @transportation-icon: #0092da;
@@ -18,7 +18,7 @@
 @man-made-icon: #666666;
 @advertising-grey: @man-made-icon;
 @landform-color: #d08f55;
-@leisure-green: darken(@park, 60%);
+@leisure-green: @park;
 
 @landcover-font-size: 10;
 @landcover-wrap-width-size: 30; // 3 em
@@ -36,7 +36,11 @@
 @standard-line-spacing-size: -1.5; // -0.15 em
 @standard-font: @book-fonts;
 
-/* Note that .points is also used in water-features.mss */
+// Note that .points is also used in water-features.mss
+
+// -- TODO : decide whether we really want to remove all points ---------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
+/*
 .points {
   [feature = 'tourism_alpine_hut'][zoom >= 13],
   [feature = 'tourism_wilderness_hut'][zoom >= 13],
@@ -1784,7 +1788,7 @@
   }
 }
 
-/* Note that .text is also used in water.mss */
+// Note that .text is also used in water.mss
 .text-low-zoom[zoom < 10],
 .text[zoom >= 10] {
   [feature = 'natural_cape'][zoom >= 4][way_pixels > 3000][way_pixels < 800000],
@@ -2472,7 +2476,8 @@
       [feature = 'landuse_cemetery'],
       [feature = 'amenity_grave_yard'] {
         text-fill: darken(@cemetery, 50%);
-        text-halo-radius: @standard-halo-radius * 1.5; /* extra halo needed to overpower the cemetery polygon pattern */
+        text-halo-radius: @standard-halo-radius * 1.5; 
+        // extra halo needed to overpower the cemetery polygon pattern
       }
       [feature = 'landuse_residential'] {
         text-fill: darken(@residential, 50%);
@@ -2517,7 +2522,8 @@
       [feature = 'tourism_theme_park'],
       [feature = 'tourism_zoo'] {
         text-fill: @tourism;
-        text-face-name: @bold-fonts; /*rendered bold to improve visibility since theme parks tend to have crowded backgrounds*/
+        text-face-name: @bold-fonts; 
+        // rendered bold to improve visibility since theme parks tend to have crowded backgrounds
       }
       [feature = 'amenity_kindergarten'],
       [feature = 'amenity_school'],
@@ -2552,7 +2558,8 @@
       }
       [feature = 'leisure_dog_park'] {
         text-fill: @leisure-green;
-        text-halo-radius: @standard-halo-radius * 1.5; /* Extra halo needed to stand out from paw pattern. */
+        text-halo-radius: @standard-halo-radius * 1.5; 
+        // Extra halo needed to stand out from paw pattern.
         text-halo-fill: @standard-halo-fill;
       }
       [feature = 'leisure_track'] {
@@ -3420,3 +3427,4 @@
     }
   }
 }
+*/

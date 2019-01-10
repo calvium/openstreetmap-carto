@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'set', 'prefix', '/usr' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 info config set "prefix" "/usr"
+5 verbose stack Error: EACCES: permission denied, open '/.npmrc'
+6 verbose cwd /openstreetmap-carto
+7 error Linux 4.9.125-linuxkit
+8 error argv "/usr/bin/node" "/usr/bin/npm" "set" "prefix" "/usr"
+9 error node v8.10.0
+10 error npm  v3.5.2
+11 error path /.npmrc
+12 error code EACCES
+13 error errno -13
+14 error syscall open
+15 error Error: EACCES: permission denied, open '/.npmrc'
+15 error  { Error: EACCES: permission denied, open '/.npmrc' errno: -13, code: 'EACCES', syscall: 'open', path: '/.npmrc' }
+16 error Please try running this command again as root/Administrator.
+17 verbose exit [ -13, true ]

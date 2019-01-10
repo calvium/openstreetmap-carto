@@ -1,5 +1,6 @@
 @power-line-color: #888;
 
+/*
 #power-line {
   [zoom >= 14] {
     line-width: 0.5;
@@ -53,3 +54,4 @@
     marker-width: 3;
   }
 }
+*/
