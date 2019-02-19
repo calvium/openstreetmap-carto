@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 # Kosmtik with plugins, forcing prefix to /usr because bionic sets
 # npm prefix to /usr/local, which breaks the install
 
-RUN npm set prefix /usr && npm install kosmtik
-#RUN npm set prefix /usr && npm install -g https://github.com/kosmtik/kosmtik.git#bdbef4d0ffc533e5903189277187459fc6662f5a
+RUN npm set prefix /usr && npm install -g kosmtik
+#RUN npm set prefix /usr && npm install -g https://github.com/kosmtik/kosmtik.git
 
 WORKDIR /usr/lib/node_modules/kosmtik/ 
 RUN kosmtik plugins --install kosmtik-overpass-layer \
